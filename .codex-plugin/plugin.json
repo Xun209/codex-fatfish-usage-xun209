@@ -1,0 +1,38 @@
+{
+  "name": "usage-gauge",
+  "version": "1.0.0",
+  "description": "Codex 用量与订阅额度面板：读当前会话的真实 token 消耗与会员订阅周期剩余额度（5 小时窗口 / 每周窗口），并可把摘要推到宠物活动条上。\n\nAliases: @usage-gauge, @用量, @额度, usage, quota, rate limit.\n\nUse this plugin when the user asks how much of their Codex / ChatGPT subscription is left, how many tokens the current session has burned, when the 5-hour or weekly limit resets, or wants that number surfaced on the desktop pet.",
+  "author": {
+    "name": "usage-gauge contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "usage",
+    "quota",
+    "rate-limit",
+    "tokens",
+    "subscription",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "用量挂件",
+    "shortDescription": "显示当前模型的用量与订阅周期剩余额度",
+    "longDescription": "用量挂件从 Codex 自己的会话日志里读出真实用量：当前模型的 token 消耗（输入/缓存/输出/推理）、会员订阅的 5 小时窗口与每周窗口已用百分比及重置时间。它可以直接回答「我还剩多少额度」，也能把一行摘要通过 update_running_summary 推到桌面宠物的活动条上，让用量一直挂在眼前。",
+    "developerName": "usage-gauge contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "我今天还剩多少 Codex 额度",
+      "把当前用量显示到宠物旁边"
+    ],
+    "brandColor": "#0f766e",
+    "composerIcon": "./assets/composer-icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  },
+  "bundledContentVariant": "unified"
+}

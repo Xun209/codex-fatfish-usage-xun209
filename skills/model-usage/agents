@@ -1,0 +1,4 @@
+interface:
+  display_name: "用量挂件"
+  short_description: "显示当前模型的 token 消耗与会员订阅周期剩余额度（5 小时 / 每周）。"
+  default_prompt: "我今天还剩多少 Codex 额度？把它显示到宠物旁边。"
